@@ -1,0 +1,98 @@
+body {
+    background-color: #8dafca;
+    color: #0c1d3f;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 25px 15px 25px 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+h1 {
+    color: #444c5c;
+    background-color: #ca8daf;
+    margin: 30px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #444c5c;
+    background-color: #afca8d;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 10px 0 0 0;
+}
+
+
+#About {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+
+#Experience {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+
+.exp-list {
+    padding: 0 25px;
+}
+
+.exp-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.148);
+    background-color: #83937046;
+    padding: 5px 10px;
+}
+
+.exp-details,
+.exp-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-details a {
+    font-weight: 800;
+    font-size: medium;
+}
+
+.exp-info p {
+    margin-top: 0;
+}
+
+#Skills {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+
+#Projects {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+
+#Connect {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+
+.media {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
