@@ -56,3 +56,23 @@ messageForm.addEventListener("submit", function(event) {
 
     event.target.reset()
 })
+
+//Fetch API ("get" request to Github)
+fetch("https://api.github.com/users/Valentina-Tina-M/repos")
+.then(function(response) {
+    return response.json()
+})
+.then(function(repositories) {
+    console.log(repositories)
+    const projectSection = document.getElementById("project")
+    const projectList = projectSection.querySelector("ul")
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li")
+      project.innerText = repositories[i].name
+      projectList.appendChild(project)
+    }
+
+})
+.catch(function(error) {
+    console.error("Error", error)   
+})
