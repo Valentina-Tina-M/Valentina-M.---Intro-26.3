@@ -97,3 +97,24 @@ h3 {
     flex-direction: row-reverse;
     justify-content: space-evenly;
 }
+
+#MessageForm {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+#messages {
+    margin: 10px;
+    border: 2px solid #afca8d;
+    padding: 5px 10px 5px 10px;
+}
+
+label, input, textarea, button{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    label, input, textarea, button {
+        font-size: 1.2em;   
+    }
+}
