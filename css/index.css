@@ -6,6 +6,8 @@ body {
 }
 
 .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
     display: flex;
     gap: 20px;
 }
@@ -60,6 +62,7 @@ h3 {
 .exp-info {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -79,7 +82,7 @@ h3 {
     padding: 5px 10px 5px 10px;
 }
 
-#project {
+#projects {
     margin: 10px;
     border: 2px solid #afca8d;
     padding: 5px 10px 5px 10px;
@@ -103,6 +106,7 @@ h3 {
 .skil-list {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -117,12 +121,13 @@ h3 {
     padding: 5px 10px 5px 10px;
 }
 
-label, input, textarea, button{
+label, input, textarea, button {
     width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
-    label, input, textarea, button {
+    label, input, textarea, button, body {
         font-size: 1.2em;   
     }
+
 }

@@ -58,13 +58,16 @@ messageForm.addEventListener("submit", function(event) {
 })
 
 //Fetch API ("get" request to Github)
-fetch("https://api.github.com/users/Valentina-Tina-M/repos")
+const githubUsername = "Valentina-Tina-M"
+const url = `https://api.github.com/users/${githubUsername}/repos`
+
+fetch(url)
 .then(function(response) {
     return response.json()
 })
 .then(function(repositories) {
     console.log(repositories)
-    const projectSection = document.getElementById("project")
+    const projectSection = document.getElementById("projects")
     const projectList = projectSection.querySelector("ul")
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement("li")
